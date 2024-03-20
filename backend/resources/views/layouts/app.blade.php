@@ -84,7 +84,7 @@
 						    <h5>Меню</h5>
                         </li>
 						<li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Главная</a>
 							<hr class="hr hr-blurry m-0" />
                         </li>
                         <li class="nav-item dropdown">
@@ -126,7 +126,7 @@
             <div class="row align-items-center">
                 <ul class="d-flex m-0" style="list-style-type:none;">
                     <li>
-                        <a href="#" class="btn text-white">
+                        <a href="{{ route('home') }}" class="btn text-white">
                             Главная
                         </a>
                     </li>
@@ -167,7 +167,7 @@
     
     <div class="bottom py-5 container">
         <div class="bottom-item">
-            <img class="float-start" src="images/icon.png" alt="AIRSOFT" width="100px" />
+            <img class="float-start" src="{{ asset('images/icon.png') }}" alt="AIRSOFT" width="100px" />
             <span>Магазин страйбольной тематики. Найдем все что интересует!</span>
             <div>
                 <span class="bottom-feedback">Адрес:</span>
